@@ -1,3 +1,48 @@
 /* =============
     Header
 ============= */
+
+header {
+    background-color: #7D9917;
+    width: 100%;
+    position: fixed;
+
+    >#green-area {
+        height: 153px;
+
+        >#logo-container {
+            >#logo {
+                width: 150px;
+                padding: 20px;
+            }
+        }
+
+        >#littlenav-container {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 300px;
+            background-color: white;
+            padding: 20px;
+
+            >ul {
+                li {
+                    display: inline;
+                }
+            }
+        }
+    }
+
+    >#nav-container {
+        height: 51px;
+        background-color: white;
+        >ul {
+            width: 100%;
+            li {
+                height: 29px;
+                display: inline-block;
+                padding: 0 85px;
+            }
+        }
+    }
+}
