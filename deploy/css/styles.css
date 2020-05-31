@@ -365,7 +365,8 @@ textarea {
 header {
   background-color: #7D9917;
   width: 100%;
-  position: fixed; }
+  position: fixed;
+  top: 0; }
   header > #green-area {
     height: 153px; }
     header > #green-area > #logo-container > #logo {
@@ -388,20 +389,82 @@ header {
       header > #nav-container > ul li {
         height: 29px;
         display: inline-block;
-        padding: 0 85px; }
+        padding: 0 75px; }
 
 /* =============
     Footer
 ============= */
+> footer {
+  height: 50px;
+  background-color: white; }
+  > footer > ul {
+    width: 100%; }
+    > footer > ul li {
+      height: 29px;
+      display: inline-block;
+      padding: 0 75px; }
+
 /* =============
     Section-1
 ============= */
 #section-1 {
+  background-color: #E4EBCB;
   margin-top: 255px; }
+  #section-1 > #section-1-first {
+    background-image: url("../img/bridge.png");
+    background-position: center;
+    background-size: cover;
+    height: 300px; }
+    #section-1 > #section-1-first > h1 {
+      font-size: 3.75rem;
+      text-align: center;
+      color: white;
+      margin: auto; }
+  #section-1 > #section-1-middle {
+    background-color: white;
+    background-position: center;
+    height: 345px;
+    width: 905px; }
+    #section-1 > #section-1-middle > h3, #section-1 > #section-1-middle p, #section-1 > #section-1-middle p {
+      text-align: center;
+      margin: auto; }
+  #section-1 > #section-1-last {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; }
+    #section-1 > #section-1-last > #shop {
+      text-align: center;
+      margin: auto; }
 
 /* =============
     Section-2
 ============= */
+#section-2 {
+  background-color: #E4EBCB; }
+  #section-2 > #section-2-first {
+    background-color: white;
+    background-position: center;
+    height: 345px;
+    width: 905px; }
+    #section-2 > #section-2-first > h3, #section-2 > #section-2-first p {
+      text-align: center; }
+  #section-2 > #section-2-last {
+    background-image: url("../img/bigtent.png");
+    background-position: center;
+    background-size: cover;
+    height: 300px; }
+    #section-2 > #section-2-last > h1 {
+      font-size: remcalc(60);
+      text-align: center;
+      color: white; }
+
 /* =============
     Section-3
 ============= */
+#section-3 {
+  background-color: #E4EBCB;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
+  #section-3 > #section-3-first > h2 {
+    text-align: center; }
+  #section-3 > #section-3-middle {
+    position: center; }

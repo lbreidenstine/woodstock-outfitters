@@ -2,6 +2,42 @@
     Section-1
 ============= */
 #section-1{
+    background-color: #E4EBCB;
     margin-top: 255px;
 
+    >#section-1-first {
+        background-image: url("../img/bridge.png");
+        background-position: center;
+        background-size: cover;
+        height: 300px;
+
+        >h1 {
+            font-size: rem-calc(60);
+            text-align: center;
+            color: white;
+            margin: auto;
+        }
+    }
+
+    >#section-1-middle {
+        background-color: white;
+        background-position: center;
+        height: 345px;
+        width: 905px;
+
+        >h3, p, p {
+            text-align: center;
+            margin: auto;
+        }
+    }
+
+    >#section-1-last {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+        >#shop {
+            text-align: center;
+            margin: auto;
+        }
+    }
 }

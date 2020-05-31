@@ -6,6 +6,7 @@ header {
     background-color: #7D9917;
     width: 100%;
     position: fixed;
+    top: 0;
 
     >#green-area {
         height: 153px;
@@ -41,7 +42,7 @@ header {
             li {
                 height: 29px;
                 display: inline-block;
-                padding: 0 85px;
+                padding: 0 75px;
             }
         }
     }

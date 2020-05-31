@@ -3,5 +3,29 @@
 ============= */
 
 #section-2 {
-    
+    background-color: #E4EBCB;
+
+    >#section-2-first {
+        background-color: white;
+        background-position: center;
+        height: 345px;
+        width: 905px;
+
+        >h3, p {
+            text-align: center;
+        }
+    }
+
+    >#section-2-last {
+        background-image: url("../img/bigtent.png");
+        background-position: center;
+        background-size: cover;
+        height: 300px;
+
+        >h1 {
+            font-size: remcalc(60);
+            text-align: center; 
+            color: white;
+        }
+    }
 }
