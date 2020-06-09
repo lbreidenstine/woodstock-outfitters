@@ -5,27 +5,40 @@
 #section-2 {
     background-color: #E4EBCB;
 
-    >#section-2-first {
+    >div {
+    #section-2-first {
+        margin-top: 55px;
         background-color: white;
         background-position: center;
+        border-radius: 20px;
         height: 345px;
         width: 905px;
+        margin-left: 375px;
+        margin-right: 375px;
 
-        >h3, p {
+        >div {
             text-align: center;
+            padding: 50px 0;
+            margin-left: 195px;
+            margin-right: 195px;
+            h3 {
+                font-size: rem-calc(25);
+            }
         }
     }
 
-    >#section-2-last {
+    #section-2-last {
         background-image: url("../img/bigtent.png");
         background-position: center;
         background-size: cover;
-        height: 300px;
+        height: 600px;
 
-        >h1 {
-            font-size: remcalc(60);
+        h1 {
+            font-size: rem-calc(80);
             text-align: center; 
+            padding: 260px 0;
             color: white;
         }
     }
+}
 }

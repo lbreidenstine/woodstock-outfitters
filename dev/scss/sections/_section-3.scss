@@ -4,16 +4,49 @@
 
 #section-3 {
     background-color: #E4EBCB;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
 
-    >#section-3-first {
-        >h2 {
-            text-align: center;
+    #section-3-first {
+        >div {
+            margin: 50px 0;
+            >h2 {
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                position: center;
+                margin: auto;
+            }
         }
     }
 
-    >#section-3-middle {
-        position: center;
+    #section-3-middle {
+        display: grid;
+        grid-template-columns: auto 1000px auto;
+        grid-template-areas: ". middle .";
+        
+        >div {
+            grid-area: middle;
+            background-color: white;
+            background-position: center;
+            border-radius: 20px;
+            height: 345px;
+            width: 905px;
+            padding-top: 10px;
+            text-align: center;
+            
+            >div {
+            margin-top: 40px;
+            }
+        }
+    }
+
+    #section-3-last {
+        >div {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: center;
+        }
     }
 }

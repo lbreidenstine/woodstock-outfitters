@@ -317,6 +317,9 @@ template {
 /* =============
     Base
 ============= */
+body {
+  background-color: #E4EBCB; }
+
 ul {
   margin: 0;
   padding: 0; }
@@ -380,29 +383,81 @@ header {
       background-color: white;
       padding: 20px; }
       header > #green-area > #littlenav-container > ul li {
-        display: inline; }
+        display: inline;
+        padding: 14px;
+        position: center; }
+      header > #green-area > #littlenav-container > ul li:hover {
+        background: #E4EBCB; }
   header > #nav-container {
+    width: 100%;
+    background: white;
+    display: flex;
+    overflow: hidden;
     height: 51px;
     background-color: white; }
     header > #nav-container > ul {
-      width: 100%; }
-      header > #nav-container > ul li {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+      list-style: none; }
+      header > #nav-container > ul > li {
+        margin: 0;
+        padding: 0;
+        float: left;
+        position: relative;
         height: 29px;
         display: inline-block;
-        padding: 0 75px; }
+        padding: 8px 35px; }
+        header > #nav-container > ul > li > a {
+          color: #394801;
+          display: block;
+          padding: 8px 50px;
+          text-align: center;
+          text-decoration: none;
+          -webkit-transition: all .25s ease;
+          -moz-transition: all .25s ease;
+          -ms-transition: all .25s ease;
+          -o-transition: all .25s ease;
+          transition: all .25s ease; }
+      header > #nav-container > ul li:hover a {
+        background: #E4EBCB; }
 
 /* =============
     Footer
 ============= */
-> footer {
+footer {
+  background-color: white;
+  width: 100%;
+  background: white;
+  display: flex;
+  overflow: hidden;
   height: 50px;
   background-color: white; }
-  > footer > ul {
-    width: 100%; }
-    > footer > ul li {
+  footer ul {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none; }
+    footer ul li {
+      padding: 0;
+      float: center;
+      position: relative;
       height: 29px;
       display: inline-block;
-      padding: 0 75px; }
+      padding: 8px 27px; }
+      footer ul li > a {
+        color: #394801;
+        display: block;
+        padding: 8px 27px;
+        text-align: center;
+        text-decoration: none;
+        -webkit-transition: all .25s ease;
+        -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+        -o-transition: all .25s ease;
+        transition: all .25s ease; }
+    footer ul li:hover {
+      background: #E4EBCB; }
 
 /* =============
     Section-1
@@ -410,61 +465,147 @@ header {
 #section-1 {
   background-color: #E4EBCB;
   margin-top: 255px; }
-  #section-1 > #section-1-first {
+  #section-1 > div #section-1-first {
     background-image: url("../img/bridge.png");
     background-position: center;
     background-size: cover;
-    height: 300px; }
-    #section-1 > #section-1-first > h1 {
-      font-size: 3.75rem;
+    height: 600px; }
+    #section-1 > div #section-1-first h1 {
+      font-size: 5rem;
       text-align: center;
-      color: white;
-      margin: auto; }
-  #section-1 > #section-1-middle {
+      padding: 250px 0;
+      color: white; }
+  #section-1 > div #section-1-middle {
+    margin-top: 55px;
     background-color: white;
     background-position: center;
+    border-radius: 20px;
     height: 345px;
-    width: 905px; }
-    #section-1 > #section-1-middle > h3, #section-1 > #section-1-middle p, #section-1 > #section-1-middle p {
+    width: 905px;
+    margin-left: 375px;
+    margin-right: 375px; }
+    #section-1 > div #section-1-middle > div {
       text-align: center;
-      margin: auto; }
-  #section-1 > #section-1-last {
+      padding: 55px 0;
+      margin-left: 120px;
+      margin-right: 120px; }
+      #section-1 > div #section-1-middle > div h3 {
+        font-size: 1.5625rem; }
+  #section-1 > div #section-1-last #shop {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: center;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center; }
+    #section-1 > div #section-1-last #shop h2 {
+      color: #394801; }
+  #section-1 > div #section-1-last > div {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; }
-    #section-1 > #section-1-last > #shop {
-      text-align: center;
-      margin: auto; }
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". jacket backpack tent .";
+    text-align: center; }
+    #section-1 > div #section-1-last > div > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto; }
+      #section-1 > div #section-1-last > div > div h2 {
+        color: white; }
+    @media screen and (max-width: 700px) {
+      #section-1 > div #section-1-last > div {
+        display: grid;
+        grid-template-columns: 20% auto 20%;
+        grid-template-areas: ". jacket ."  ". backpack ." ". tent ."; }
+        #section-1 > div #section-1-last > div > div {
+          margin: 20px auto; } }
+    #section-1 > div #section-1-last > div #jacket {
+      grid-area: jacket;
+      background-image: url("../img/yellowjacket.png");
+      background-position: center;
+      background-size: cover;
+      height: 263px;
+      width: 263px; }
+    #section-1 > div #section-1-last > div #backpack {
+      grid-area: backpack;
+      background-image: url("../img/backpack.png");
+      background-position: center;
+      background-size: cover;
+      height: 263px;
+      width: 263px; }
+    #section-1 > div #section-1-last > div #tent {
+      grid-area: tent;
+      background-image: url("../img/smalltent.png");
+      background-position: center;
+      background-size: cover;
+      height: 263px;
+      width: 263px; }
 
 /* =============
     Section-2
 ============= */
 #section-2 {
   background-color: #E4EBCB; }
-  #section-2 > #section-2-first {
+  #section-2 > div #section-2-first {
+    margin-top: 55px;
     background-color: white;
     background-position: center;
+    border-radius: 20px;
     height: 345px;
-    width: 905px; }
-    #section-2 > #section-2-first > h3, #section-2 > #section-2-first p {
-      text-align: center; }
-  #section-2 > #section-2-last {
+    width: 905px;
+    margin-left: 375px;
+    margin-right: 375px; }
+    #section-2 > div #section-2-first > div {
+      text-align: center;
+      padding: 50px 0;
+      margin-left: 195px;
+      margin-right: 195px; }
+      #section-2 > div #section-2-first > div h3 {
+        font-size: 1.5625rem; }
+  #section-2 > div #section-2-last {
     background-image: url("../img/bigtent.png");
     background-position: center;
     background-size: cover;
-    height: 300px; }
-    #section-2 > #section-2-last > h1 {
-      font-size: remcalc(60);
+    height: 600px; }
+    #section-2 > div #section-2-last h1 {
+      font-size: 5rem;
       text-align: center;
+      padding: 260px 0;
       color: white; }
 
 /* =============
     Section-3
 ============= */
 #section-3 {
-  background-color: #E4EBCB;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; }
-  #section-3 > #section-3-first > h2 {
-    text-align: center; }
-  #section-3 > #section-3-middle {
+  background-color: #E4EBCB; }
+  #section-3 #section-3-first > div {
+    margin: 50px 0; }
+    #section-3 #section-3-first > div > h2 {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: center;
+      margin: auto; }
+  #section-3 #section-3-middle {
+    display: grid;
+    grid-template-columns: auto 1000px auto;
+    grid-template-areas: ". middle ."; }
+    #section-3 #section-3-middle > div {
+      grid-area: middle;
+      background-color: white;
+      background-position: center;
+      border-radius: 20px;
+      height: 345px;
+      width: 905px;
+      padding-top: 10px;
+      text-align: center; }
+      #section-3 #section-3-middle > div > div {
+        margin-top: 40px; }
+  #section-3 #section-3-last > div {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     position: center; }

@@ -2,17 +2,45 @@
     Footer
 ============= */
 
->footer {
+footer {
+    background-color: white;
+    width: 100%;
+    background: white;
+    display: flex;
+    overflow: hidden;
     height: 50px;
     background-color: white;
 
-    >ul {
+    ul {
         width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
 
         li {
+            padding: 0;
+            float: center;
+            position: relative;
             height: 29px;
             display: inline-block;
-            padding: 0 75px;
+            padding: 8px 27px;
+
+            >a {
+                color: #394801;
+                display: block;
+                padding: 8px 27px;
+                text-align: center;
+                text-decoration: none;
+                -webkit-transition: all .25s ease;
+                -moz-transition: all .25s ease;
+                -ms-transition: all .25s ease;
+                -o-transition: all .25s ease;
+                transition: all .25s ease;
+            }
+        }
+
+        li:hover {
+            background: #E4EBCB;
         }
     }
 }

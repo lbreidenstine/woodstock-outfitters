@@ -1,43 +1,123 @@
 /* =============
     Section-1
 ============= */
-#section-1{
+#section-1 {
     background-color: #E4EBCB;
     margin-top: 255px;
 
-    >#section-1-first {
-        background-image: url("../img/bridge.png");
-        background-position: center;
-        background-size: cover;
-        height: 300px;
+    >div {
+        #section-1-first {
+            background-image: url("../img/bridge.png");
+            background-position: center;
+            background-size: cover;
+            height: 600px;
 
-        >h1 {
-            font-size: rem-calc(60);
-            text-align: center;
-            color: white;
-            margin: auto;
+            h1 {
+                font-size: rem-calc(80);
+                text-align: center;
+                padding: 250px 0;
+                color: white;
+            }
         }
-    }
 
-    >#section-1-middle {
-        background-color: white;
-        background-position: center;
-        height: 345px;
-        width: 905px;
+        #section-1-middle {
+            margin-top: 55px;
+            background-color: white;
+            background-position: center;
+            border-radius: 20px;
+            height: 345px;
+            width: 905px;
+            margin-left: 375px;
+            margin-right: 375px;
 
-        >h3, p, p {
-            text-align: center;
-            margin: auto;
+            >div {
+
+                text-align: center;
+                padding: 55px 0;
+                margin-left: 120px;
+                margin-right: 120px;
+
+                h3 {
+                    font-size: rem-calc(25);
+                }
+
+            }
         }
-    }
 
-    >#section-1-last {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        
-        >#shop {
-            text-align: center;
-            margin: auto;
+        #section-1-last {
+
+            #shop {
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    position: center;
+                    margin: 30px auto;
+                    display: flex;
+                    justify-content: center;
+                    
+                    h2 {
+                    color: #394801;
+                }
+            }
+
+            >div {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                grid-template-areas: ". jacket backpack tent .";
+                text-align: center;
+
+                >div {
+                    h2 {
+                        color: white;
+                    }
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 auto;
+                }
+
+                @media screen and (max-width: 700px) { 
+                    display: grid;
+                    grid-template-columns: 20% auto 20%;
+                    grid-template-areas: 
+                    ". jacket ." 
+                    ". backpack ."
+                    ". tent .";
+                    >div {
+                    margin: 20px auto;
+                    }
+                }
+
+
+
+                #jacket {
+                    grid-area: jacket;
+                    background-image: url("../img/yellowjacket.png");
+                    background-position: center;
+                    background-size: cover;
+                    height: 263px;
+                    width: 263px;
+                }
+
+                #backpack {
+                    grid-area: backpack;
+                    background-image: url("../img/backpack.png");
+                    background-position: center;
+                    background-size: cover;
+                    height: 263px;
+                    width: 263px;
+                }
+
+                #tent {
+                    grid-area: tent;
+                    background-image: url("../img/smalltent.png");
+                    background-position: center;
+                    background-size: cover;
+                    height: 263px;
+                    width: 263px;
+                }
+            }
         }
     }
 }
